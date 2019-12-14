@@ -17,7 +17,7 @@ def get_delay(mu=0.5, sigma=0.2):
 
 def delayed_print(txt):
     for symbol in txt:
-        print(symbol, end="")
+        print(symbol, end="", flush=True)
         delay = get_delay()
         time.sleep(delay)
 
