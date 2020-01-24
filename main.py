@@ -11,7 +11,8 @@ def get_wiki_text(session):
     return head + "\n" * 2 + text
 
 
-def get_delay(mu=0.5, sigma=0.2):
+def get_delay(mu=0.3, sigma=0.2):
+    """assuming 200 characters per minute delay mu should be ~0.3"""
     return max(0, random.normalvariate(mu, sigma))
 
 
